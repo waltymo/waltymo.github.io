@@ -2,7 +2,7 @@
 
 米哈游「基础大模型技术分享 & 顶尖校招生（含实习）招募」报名用。
 
-- 线上地址（发布后）：https://waltmyo.github.io
+- 线上地址（发布后）：https://waltymo.github.io
 - 本地目录：`D:\dsh-wsp\homepage`
 
 ## 三个文件
@@ -22,11 +22,11 @@
 1. 打开 GitHub Desktop → 菜单 `File` → `Add local repository...`
 2. 选 `D:\dsh-wsp\homepage` → 点 `Add repository`
 3. 右上角点 `Publish repository`
-4. **Name 改成 `waltmyo.github.io`**（一字不差，这是 GitHub Pages 的硬要求）
+4. **Name 改成 `waltymo.github.io`**（一字不差，这是 GitHub Pages 的硬要求）
 5. **取消勾选 `Keep this code private`**（必须公开，免费账号的 Pages 不支持私有仓库）
 6. 点 `Publish repository`
 
-等 1–2 分钟，打开 https://waltmyo.github.io 就能看到。
+等 1–2 分钟，打开 https://waltymo.github.io 就能看到。
 
 ## 以后改内容
 
