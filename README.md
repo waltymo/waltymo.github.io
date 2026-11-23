@@ -2,7 +2,8 @@
 
 米哈游「基础大模型技术分享 & 顶尖校招生（含实习）招募」报名用。
 
-- 线上地址（发布后）：https://waltymo.github.io
+- 线上地址：https://waltymo.github.io
+- 仓库：https://github.com/waltymo/waltymo.github.io
 - 本地目录：`D:\dsh-wsp\homepage`
 
 ## 三个文件
@@ -15,29 +16,26 @@
 
 纯静态，无 JS、无构建步骤。改完直接刷新浏览器就能看到。
 
-## 发布（只做一次）
+## 改内容后发布
 
-本地 git 仓库已经 init 并提交好了，用 GitHub Desktop 发布：
+```bash
+cd D:\dsh-wsp\homepage
+git add -A && git commit -m "改了什么" && git push
+```
 
-1. 打开 GitHub Desktop → 菜单 `File` → `Add local repository...`
-2. 选 `D:\dsh-wsp\homepage` → 点 `Add repository`
-3. 右上角点 `Publish repository`
-4. **Name 改成 `waltymo.github.io`**（一字不差，这是 GitHub Pages 的硬要求）
-5. **取消勾选 `Keep this code private`**（必须公开，免费账号的 Pages 不支持私有仓库）
-6. 点 `Publish repository`
+等 1 分钟刷新线上页面。
 
-等 1–2 分钟，打开 https://waltymo.github.io 就能看到。
+- 已装 GitHub CLI，登录账号 `waltymo`（`gh auth status` 可查）
+- git 已配代理 `127.0.0.1:7890`（本机直连 GitHub 会超时）
+- 仓库 main 分支，Pages 自动部署，不用手动点任何设置
 
-## 以后改内容
+## 发布记录
 
-1. 改 `index.html` / `style.css`
-2. GitHub Desktop 里会显示改动 → 左下角写一句 summary → `Commit to main`
-3. 右上角 `Push origin`
-4. 等 1 分钟，页面刷新
+- 2026-11-23：建仓库 `waltymo.github.io`、推 main、Pages 自动启用、构建通过（HTTP 200）
 
 ## 待办
 
-- [ ] 邮箱换学邮：`index.html` 第 19 行 `mailto:3036631683@qq.com`
+- [ ] 邮箱换学邮：`index.html` 第 19 行 `mailto:3036631683@qq.com`（QQ 邮箱公开挂着容易被爬）
 - [ ] CV 链接：简历定稿后把 `cv.pdf` 放进来，取消 `index.html` 第 23–26 行的注释
 - [ ] 笔记段：`index.html` 第 106–113 行注释着，等笔记写完再放开
 
