@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>吕小鱼 · Lü Xiaoyu</title>
+<meta name="description" content="吕小鱼，南京邮电大学人工智能专业。研究兴趣：持续学习与结构可塑性。">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main>
+
+  <header class="hero">
+    <h1>吕小鱼 <span class="en">Lü Xiaoyu</span></h1>
+    <p class="tagline">不靠人工设计，让模型在学习中自己长出新结构。</p>
+    <p class="meta">南京邮电大学 · 人工智能 · 2024–2028</p>
+    <nav class="links">
+      <a href="mailto:3036631683@qq.com">Email</a>
+      <span class="sep">·</span>
+      <a href="https://github.com/waltmyo">GitHub</a>
+      <span class="sep">·</span>
+      <a href="#" class="muted">CV (PDF)</a>
+    </nav>
+  </header>
+
+  <section id="research">
+    <h2>研究兴趣</h2>
+    <p>
+      我关心<strong>结构可塑性</strong>（structural plasticity）框架下的持续学习：
+      模型在遇到新任务时，能不能自己决定<em>什么时候该长、长在哪里</em>，
+      把新容量分给新东西，而不是覆盖旧权重。
+    </p>
+    <p>
+      现在的持续学习方法，大多把「网络多大」当成人预先设定的超参数——正则化把旧权重绑住，
+      回放把旧数据混进来，但网络形状始终不变。我最近在试一条路：
+      让「要不要长」这个决定也交给模型自己，用「当前容量不够用了」的信号驱动扩展。
+    </p>
+    <p class="note">
+      计划：在字符级语言模型上量化灾难性遗忘，再让模型依据自身信号决定何时扩展容量。
+      <span class="status pending">计划中</span>
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>项目</h2>
+
+    <article class="card">
+      <div class="card-head">
+        <h3>结构可塑性下的持续学习</h3>
+        <span class="year">计划中 · 2026.11 起</span>
+      </div>
+      <dl>
+        <dt>问题</dt>
+        <dd>模型学新任务时该不该扩容、扩多少，目前完全由人拍定。人脑不是这样——它在学习中长出新连接。</dd>
+        <dt>计划</dt>
+        <dd>字符级语言模型先训 Shakespeare 再训金庸，测量旧语料上的 loss 上升（灾难性遗忘）；
+            再加入由容量不足信号触发的结构扩展，与固定结构 + EWC 基线对照。</dd>
+        <dt>状态</dt>
+        <dd>尚未开始训练。</dd>
+      </dl>
+      <p class="tags"><span>PyTorch</span><span>Continual Learning</span><span>Structural Plasticity</span></p>
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <h3>多视角 RGB-D 轻量级 3D 识别系统</h3>
+        <span class="year">2025.05 – 2025.10</span>
+      </div>
+      <dl>
+        <dt>问题</dt>
+        <dd>比赛场景要求机器人在算力有限的板子上识别堆叠、遮挡状态下的工件。</dd>
+        <dt>方法</dt>
+        <dd>Orbbec Astra 2 采集 0°–180° 多视角 RGB-D，覆盖不同光照与遮挡；
+            颜色分割初筛 + 人工修正的半自动标注构建数据。
+            识别管线由深度图生成掩膜、掩膜筛选、目标识别、OCR 与 embedding 检索串联而成。</dd>
+        <dt>结果</dt>
+        <dd>中国机器人大赛先进视觉赛道 3D 识别赛项国家级三等奖；
+            识别任务上板端 mIoU 0.83，在 OrangePi AIpro (8T) 上稳定运行。</dd>
+        <dt>我做了什么</dt>
+        <dd>数据采集与标注管线搭建、深度相机内参与 RGB-D 对齐调试、板端部署。</dd>
+      </dl>
+      <p class="tags"><span>Python</span><span>3D Vision</span><span>Edge Deployment</span></p>
+    </article>
+
+    <article class="card">
+      <div class="card-head">
+        <h3>工业场景 RGB-D 数据管线</h3>
+        <span class="year">2025.07 – 2025.09</span>
+      </div>
+      <dl>
+        <dt>问题</dt>
+        <dd>一批 1 万+ 张工业场景 RGB-D 原图，有效样本比例只有 48%，模型训不起来。</dd>
+        <dt>方法</dt>
+        <dd>人工复核 + 自动化脚本筛查，按模糊、过曝、标注错误三类判据剔除坏样本。</dd>
+        <dt>结果</dt>
+        <dd>剔除 5000+ 张，有效样本比例 48% → 100%；
+            该管线被实验室后续两个项目复用。</dd>
+        <dt>我做了什么</dt>
+        <dd>差样本判据设计、筛查脚本、人工复核流程。</dd>
+      </dl>
+      <p class="tags"><span>Data Pipeline</span><span>Quality Control</span></p>
+    </article>
+  </section>
+
+  <!--
+  <section id="notes">
+    <h2>笔记</h2>
+    <ul class="papers">
+      <li><a href="#">标题</a><span class="date">2026.11</span></li>
+    </ul>
+  </section>
+  -->
+
+  <section id="patents">
+    <h2>专利</h2>
+    <p class="patent">
+      <span class="badge">申请中</span>
+      一种输电线路无人机巡检航线点自动规划系统及方法。
+      申请号 CN 2026 1 0861702.1，2026 年 6 月 15 日受理。
+      发明人：朱博、孙翰林、陈衍武、<strong>吕小鱼</strong>、方政、王强。申请人：南京邮电大学。
+    </p>
+  </section>
+
+  <footer>
+    <p>最后更新：2026 年 11 月</p>
+  </footer>
+
+</main>
+
+</body>
+</html>
