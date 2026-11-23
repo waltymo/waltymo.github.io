@@ -25,7 +25,7 @@ git add -A && git commit -m "改了什么" && git push
 
 等 1 分钟刷新线上页面。
 
-- 已装 GitHub CLI，登录账号 `waltymo`（`gh auth status` 可查）
+- GitHub CLI 在 `D:\software\GitHub CLI`，已登录账号 `waltymo`（`gh auth status` 可查）
 - git 已配代理 `127.0.0.1:7890`（本机直连 GitHub 会超时）
 - 仓库 main 分支，Pages 自动部署，不用手动点任何设置
 
