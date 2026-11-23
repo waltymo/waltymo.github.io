@@ -35,7 +35,7 @@ git add -A && git commit -m "改了什么" && git push
 
 ## 待办
 
-- [ ] 邮箱换学邮：`index.html` 第 19 行 `mailto:3036631683@qq.com`（QQ 邮箱公开挂着容易被爬）
+- [x] 邮箱换学邮：已改为 `b24051711@njupt.edu.cn`（2026-11-23）
 - [ ] CV 链接：简历定稿后把 `cv.pdf` 放进来，取消 `index.html` 第 23–26 行的注释
 - [ ] 笔记段：`index.html` 第 106–113 行注释着，等笔记写完再放开
 
